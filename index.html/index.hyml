@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Virtual Closet</title>
+            <link rel=""stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <h1>My VirtualCloset</h1>
+        
+        <h2>Add Clothing</h2>
+
+        <input type ="text" id = "itemName" placeholder = "Clothing name">
+
+        <select id="category">
+            <option>Top</option>
+            <opion>Bottom</opion>
+            <option>Shoes</option>
+        </select>
+
+        <button onclick="addItem()">Add Item</button>
+
+        <h2>My Closet</h2>
+
+        <ul id="closetList"></ul>
+
+        <script src="script.js"></script>
+
+        <button onclick = "recommendOutfit() ">Recommend Outfit</button>
+    </body>
+</html>
