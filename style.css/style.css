@@ -1,18 +1,40 @@
 body {
     font-family: Arial;
     background-color:#f5f5f5;
+    margin:0;
+    padding:0;
+}
+
+.container{
+    width:80%;
+    margin:auto;
     text-align:center;
 }
 
-button {
-    padding:10px;
-    margin:10px;
-    background:black;
-    color:white;
-    border:none;
+input,select,button {
+    padding: 10px;
+    margin: 5px;
+    border-radius:8px;
+    border:1px solid #ccc;
 }
 
-ul {
-    list-style:none;
+button {
+    background:skyblue;
+    color:white;
+    cursor:pointer;
+}
+
+.closet-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:15px;
+    margin-top:20px;
+}
+
+.item-card{
+    background:purple;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
 }
 

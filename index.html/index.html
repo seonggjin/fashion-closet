@@ -1,31 +1,54 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Virtual Closet</title>
-            <link rel="stylesheet" href="style.css">
-    </head>
 
-    <body>
-        <h1>My VirtualCloset</h1>
-        
-        <h2>Add Clothing</h2>
+<head>
+    <title>Virtual Closet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
 
-        <input type ="text" id = "itemName" placeholder = "Clothing name">
+<body>
 
-        <select id="category">
-            <option>Top</option>
-            <option>Bottom</option>
-            <option>Shoes</option>
-        </select>
+<div class="container">
 
-       <button onclick="recommendOutfit()">Recommend Outfit</button>
+<h1>My Virtual Closet</h1>
 
-        <h2>My Closet</h2>
+<div class="add-section">
 
-        <ul id="closetList"></ul>
+<h2>Add Clothing</h2>
 
-        <script src="script.js"></script>
+<input type="text" id="itemName" placeholder="Clothing name">
 
-        <button onclick = "recommendOutfit() ">Recommend Outfit</button>
-    </body>
+<select id="category">
+<option value="Top">Top</option>
+<option value="Bottom">Bottom</option>
+<option value="Shoes">Shoes</option>
+</select>
+
+<button onclick="addItem()">Add Item</button>
+
+</div>
+
+<div class="closet-section">
+
+<h2>My Closet</h2>
+
+<div id="closetList" class="closet-grid"></div>
+
+</div>
+
+<div class="outfit-section">
+
+<h2>Outfit Recommendation</h2>
+
+<button onclick="recommendOutfit()">Recommend Outfit</button>
+
+<p id="outfitResult"></p>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
 </html>
